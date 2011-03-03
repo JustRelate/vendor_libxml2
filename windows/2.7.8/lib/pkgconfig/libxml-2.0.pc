@@ -1,0 +1,13 @@
+prefix=/home/tilo/work/fiona/merge/External/libxml2/windows/2.7.8
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.7.8
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:     -lws2_32 
+Cflags: -I${includedir}/libxml2 
